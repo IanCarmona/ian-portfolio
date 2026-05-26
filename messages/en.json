@@ -1,0 +1,96 @@
+{
+  "nav": {
+    "about": "About",
+    "experience": "Experience",
+    "projects": "Projects",
+    "lab": "Lab",
+    "skills": "Skills",
+    "contact": "Contact",
+    "downloadCv": "Download CV"
+  },
+  "hero": {
+    "badge": "Available for projects",
+    "intro": "Hi, I'm Ian Carmona",
+    "buildPrefix": "I build",
+    "buildSuffix": "with purpose.",
+    "subtitle": "Artificial Intelligence Engineer with experience in Data Engineering and conversational agents in production. I design AI systems, data pipelines and full-stack platforms for real business contexts.",
+    "ctaPrimary": "Let's talk",
+    "ctaSecondary": "View projects",
+    "scroll": "Scroll"
+  },
+  "stats": {
+    "costReduction": "AI cost reduction",
+    "ragPrecision": "precision with RAG",
+    "hoursSaved": "automated daily",
+    "uptime": "agent uptime"
+  },
+  "about": {
+    "eyebrow": "About me",
+    "title": "Where AI, data and product meet",
+    "education": "Education",
+    "languages": "Languages",
+    "languageList": "Spanish (Native) · English (B2)",
+    "terminalTitle": "ian@portfolio: ~/about",
+    "manifesto": "I build things that excite me and solve real problems. I'm obsessed with making technology feel simple for the people who use it.",
+    "signoff": "With code and coffee,"
+  },
+  "experience": {
+    "eyebrow": "Career",
+    "title": "Experience",
+    "subtitle": "Roles where I've shipped AI, data and product to production.",
+    "present": "Present"
+  },
+  "projects": {
+    "eyebrow": "Featured work",
+    "title": "Projects with measurable impact",
+    "subtitle": "A selection of work where engineering turned into business results.",
+    "stack": "Stack",
+    "impact": "Impact"
+  },
+  "featuredAmyra": {
+    "eyebrow": "Product in production",
+    "title": "Amyra",
+    "lede": "Conversational SaaS platform for fitness studios with a WhatsApp AI agent that books, charges memberships and serves customers 24/7. Live in production with paying customers.",
+    "cta": "See Amyra live",
+    "kpi1": "AI cost reduction",
+    "kpi2": "agent uptime",
+    "kpi3": "full stack"
+  },
+  "personalProjects": {
+    "eyebrow": "From classroom to browser",
+    "title": "Live school projects",
+    "subtitle": "Coursework and projects from my degree (AI, data, vision and algorithms), reimagined as interactive tools you can try.",
+    "demo": "Live demo",
+    "code": "Code"
+  },
+  "skills": {
+    "eyebrow": "Tech stack",
+    "title": "Skills",
+    "subtitle": "Tools and technologies I work with every day."
+  },
+  "hobbies": {
+    "eyebrow": "The human side",
+    "title": "Beyond the code",
+    "subtitle": "What keeps me curious and energized away from the keyboard."
+  },
+  "certifications": {
+    "eyebrow": "Continuous learning",
+    "title": "Certifications",
+    "subtitle": "Always learning across data and artificial intelligence."
+  },
+  "contact": {
+    "eyebrow": "Contact",
+    "title": "Let's build something together",
+    "subtitle": "Got an AI, data or full-stack project? Reach out and let's chat.",
+    "emailCta": "Send email",
+    "downloadCv": "Download CV"
+  },
+  "footer": {
+    "rights": "All rights reserved.",
+    "builtWith": "Built with Next.js, Tailwind and Framer Motion.",
+    "tagline": "AI & Data Engineer. I build intelligent systems and data that drives decisions.",
+    "navTitle": "Navigation",
+    "contactTitle": "Contact",
+    "backToTop": "Back to top"
+  }
+}

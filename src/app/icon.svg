@@ -1,0 +1,15 @@
+<svg width="64" height="64" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#8B5CF6"/>
+      <stop offset="100%" stop-color="#22D3EE"/>
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="16" fill="#0B0D12"/>
+  <!-- I — vertical bar -->
+  <rect x="14" y="18" width="5" height="28" rx="2.5" fill="url(#g)"/>
+  <!-- C — open arc -->
+  <path d="M 50 24 A 11 11 0 1 0 50 40" stroke="url(#g)" stroke-width="5" fill="none" stroke-linecap="round"/>
+  <!-- accent dot (data/neural node) -->
+  <circle cx="52" cy="14" r="2.5" fill="#22D3EE"/>
+</svg>

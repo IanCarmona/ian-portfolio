@@ -1,0 +1,96 @@
+{
+  "nav": {
+    "about": "Sobre mí",
+    "experience": "Experiencia",
+    "projects": "Proyectos",
+    "lab": "Lab",
+    "skills": "Skills",
+    "contact": "Contacto",
+    "downloadCv": "Descargar CV"
+  },
+  "hero": {
+    "badge": "Disponible para proyectos",
+    "intro": "Hola, soy Ian Carmona",
+    "buildPrefix": "Construyo",
+    "buildSuffix": "con propósito.",
+    "subtitle": "Ingeniero en Inteligencia Artificial con experiencia en Data Engineering y agentes conversacionales en producción. Diseño sistemas de IA, pipelines de datos y plataformas full-stack para contextos de negocio reales.",
+    "ctaPrimary": "Hablemos",
+    "ctaSecondary": "Ver proyectos",
+    "scroll": "Scroll"
+  },
+  "stats": {
+    "costReduction": "reducción de costo de IA",
+    "ragPrecision": "precisión con RAG",
+    "hoursSaved": "diarias automatizadas",
+    "uptime": "agente activo"
+  },
+  "about": {
+    "eyebrow": "Sobre mí",
+    "title": "Donde la IA, los datos y el producto se encuentran",
+    "education": "Educación",
+    "languages": "Idiomas",
+    "languageList": "Español (Nativo) · Inglés (B2)",
+    "terminalTitle": "ian@portfolio: ~/about",
+    "manifesto": "Construyo cosas que me emocionan y que resuelven problemas reales. Me obsesiona que la tecnología se sienta simple para quien la usa.",
+    "signoff": "Con código y café,"
+  },
+  "experience": {
+    "eyebrow": "Trayectoria",
+    "title": "Experiencia",
+    "subtitle": "Roles donde he llevado IA, datos y producto a producción.",
+    "present": "Presente"
+  },
+  "projects": {
+    "eyebrow": "Casos destacados",
+    "title": "Proyectos con impacto medible",
+    "subtitle": "Selección de trabajos donde la ingeniería se tradujo en resultados de negocio.",
+    "stack": "Stack",
+    "impact": "Impacto"
+  },
+  "featuredAmyra": {
+    "eyebrow": "Producto en producción",
+    "title": "Amyra",
+    "lede": "Plataforma SaaS conversacional para estudios de fitness con un agente de IA por WhatsApp que agenda, cobra membresías y atiende clientes 24/7. Activa en producción con clientes de pago.",
+    "cta": "Ver Amyra en vivo",
+    "kpi1": "reducción de costo de IA",
+    "kpi2": "agente activo",
+    "kpi3": "stack completo"
+  },
+  "personalProjects": {
+    "eyebrow": "De la escuela al navegador",
+    "title": "Proyectos escolares en vivo",
+    "subtitle": "Prácticas y proyectos de mi carrera (IA, datos, visión y algoritmos), reimaginados como herramientas interactivas que puedes probar.",
+    "demo": "Ver demo",
+    "code": "Código"
+  },
+  "skills": {
+    "eyebrow": "Stack técnico",
+    "title": "Habilidades",
+    "subtitle": "Herramientas y tecnologías con las que trabajo día a día."
+  },
+  "hobbies": {
+    "eyebrow": "El lado humano",
+    "title": "Más allá del código",
+    "subtitle": "Lo que me mantiene curioso y con energía fuera del teclado."
+  },
+  "certifications": {
+    "eyebrow": "Formación continua",
+    "title": "Certificaciones",
+    "subtitle": "Aprendizaje constante en datos e inteligencia artificial."
+  },
+  "contact": {
+    "eyebrow": "Contacto",
+    "title": "Construyamos algo juntos",
+    "subtitle": "¿Tienes un proyecto de IA, datos o full-stack? Escríbeme y platiquemos.",
+    "emailCta": "Enviar correo",
+    "downloadCv": "Descargar CV"
+  },
+  "footer": {
+    "rights": "Todos los derechos reservados.",
+    "builtWith": "Hecho con Next.js, Tailwind y Framer Motion.",
+    "tagline": "Ingeniero en IA y Data. Construyo sistemas inteligentes y datos que mueven decisiones.",
+    "navTitle": "Navegación",
+    "contactTitle": "Contacto",
+    "backToTop": "Volver arriba"
+  }
+}

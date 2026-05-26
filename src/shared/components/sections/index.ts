@@ -1,0 +1,13 @@
+export { About } from "./About";
+export { Certifications } from "./Certifications";
+export { Contact } from "./Contact";
+export { Experience } from "./Experience";
+export { FeaturedAmyra } from "./FeaturedAmyra";
+export { Footer } from "./Footer";
+export { Hero } from "./Hero";
+export { Hobbies } from "./Hobbies";
+export { Navbar } from "./Navbar";
+export { NeuralBackground } from "./NeuralBackground";
+export { PersonalProjects } from "./PersonalProjects";
+export { Projects } from "./Projects";
+export { Skills } from "./Skills";

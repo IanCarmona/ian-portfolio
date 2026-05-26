@@ -1,0 +1,182 @@
+@import "tailwindcss";
+
+/* ============================================================
+   Design tokens — dark · elegant · tech (índigo → cian)
+   ============================================================ */
+@theme {
+  --color-bg: #0b0d12;
+  --color-surface: #12141c;
+  --color-surface-2: #1a1d27;
+  --color-border: #232733;
+  --color-text: #e5e7eb;
+  --color-text-dim: #9ca3af;
+  --color-text-faint: #6b7280;
+  --color-indigo: #8b5cf6;
+  --color-cyan: #22d3ee;
+  --color-amber: #f5a623;
+
+  --font-sans: var(--font-outfit), ui-sans-serif, system-ui, -apple-system,
+    "Segoe UI", sans-serif;
+  --font-serif: var(--font-fraunces), ui-serif, Georgia, "Times New Roman", serif;
+  --font-mono: var(--font-mono-jetbrains), ui-monospace, "SFMono-Regular",
+    Menlo, monospace;
+
+  --shadow-glow-indigo: 0 0 50px -12px rgba(139, 92, 246, 0.4);
+  --shadow-glow-cyan: 0 0 50px -12px rgba(34, 211, 238, 0.35);
+
+  --ease-smooth: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* ============================================================
+   Base
+   ============================================================ */
+* {
+  border-color: var(--color-border);
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 6rem;
+}
+
+body {
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  overflow-x: hidden;
+}
+
+::selection {
+  background: rgba(139, 92, 246, 0.3);
+  color: #fff;
+}
+
+/* Elegant thin scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-bg);
+}
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(var(--color-indigo), var(--color-cyan));
+  border-radius: 999px;
+  border: 3px solid var(--color-bg);
+}
+
+/* ============================================================
+   Reusable helpers
+   ============================================================ */
+
+/* Duotone gradient text */
+.text-gradient {
+  background: linear-gradient(135deg, #a78bfa 0%, #8b5cf6 45%, #22d3ee 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
+
+/* Subtle dotted grid / glow backdrop used on dark sections */
+.bg-grid {
+  background-image: radial-gradient(
+    circle at 1px 1px,
+    rgba(255, 255, 255, 0.05) 1px,
+    transparent 0
+  );
+  background-size: 36px 36px;
+}
+
+.bg-radial-glow {
+  background: radial-gradient(
+      600px circle at 15% 10%,
+      rgba(139, 92, 246, 0.12),
+      transparent 45%
+    ),
+    radial-gradient(
+      600px circle at 85% 30%,
+      rgba(34, 211, 238, 0.1),
+      transparent 45%
+    );
+}
+
+/* Gradient hairline border via mask */
+.border-gradient {
+  position: relative;
+}
+.border-gradient::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  padding: 1px;
+  background: linear-gradient(135deg, rgba(139, 92, 246, 0.5), rgba(34, 211, 238, 0.5));
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  pointer-events: none;
+}
+
+/* Glass surface for navbar */
+.glass {
+  background: rgba(18, 20, 28, 0.6);
+  backdrop-filter: blur(20px) saturate(160%);
+  -webkit-backdrop-filter: blur(20px) saturate(160%);
+}
+
+/* Terminal blinking cursor */
+@keyframes blink {
+  0%,
+  49% {
+    opacity: 1;
+  }
+  50%,
+  100% {
+    opacity: 0;
+  }
+}
+.cursor-blink {
+  display: inline-block;
+  width: 0.6ch;
+  animation: blink 1s steps(1) infinite;
+}
+
+/* Marquee for skills / logos */
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+.animate-marquee {
+  animation: marquee 30s linear infinite;
+}
+
+/* Soft float */
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
