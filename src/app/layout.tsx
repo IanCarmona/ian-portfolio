@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import { Outfit, JetBrains_Mono, Fraunces } from "next/font/google";
+import { Analytics } from "@vercel/analytics/next";
 
 import { LanguageProvider } from "@/providers/LanguageProvider";
 import { SITE } from "@/constants/site";
@@ -72,6 +73,7 @@ export default function RootLayout({
         className={`${outfit.variable} ${jetbrains.variable} ${fraunces.variable} antialiased`}
       >
         <LanguageProvider>{children}</LanguageProvider>
+        <Analytics />
       </body>
     </html>
   );
