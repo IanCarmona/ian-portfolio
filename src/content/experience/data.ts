@@ -29,27 +29,27 @@ export const experience: ExperienceItem[] = [
   {
     company: "Amyra",
     url: "https://amyra.com.mx",
-    role: { es: "Tech Lead", en: "Tech Lead" },
+    role: { es: "AI Engineer", en: "AI Engineer" },
     start: "Nov 2025",
     end: present,
     location: cdmx,
     accent: "indigo",
     highlights: [
       {
-        es: "Lidero el desarrollo técnico de una plataforma SaaS conversacional para estudios de fitness y negocios de membresías; defino el roadmap y las decisiones de producto.",
-        en: "Lead the technical development of a conversational SaaS platform for fitness studios and membership businesses; I own the roadmap and product decisions.",
+        es: "Construí de cero un agente conversacional sobre LangGraph y Claude, integrado a WhatsApp Business Platform, que gestiona agendamiento, recordatorios, venta de membresías y consultas del negocio sin intervención humana. En producción con clientes de pago bajo suscripción.",
+        en: "Built a conversational agent from scratch on LangGraph and Claude, integrated with the WhatsApp Business Platform, handling scheduling, reminders, membership sales and business queries without human intervention. Live in production with paying subscription customers.",
       },
       {
-        es: "Construí un agente autónomo por WhatsApp (GPT) que agenda citas, envía recordatorios, vende membresías y resuelve consultas del negocio sin intervención humana.",
-        en: "Built an autonomous WhatsApp agent (GPT) that books appointments, sends reminders, sells memberships and resolves business queries with no human intervention.",
+        es: "Reduje el costo por mensaje del agente en 70% (de $1 USD por cada 10 mensajes a $1 por cada 30) mediante migración de modelo, prompt caching, poda de contexto y rediseño de prompts. En turnos con caché activo baja a $1 por cada 60.",
+        en: "Cut cost per message by 70% (from $1 USD per 10 messages to $1 per 30) through model migration, prompt caching, context pruning and prompt redesign. On cache-warm turns it drops to $1 per 60.",
       },
       {
-        es: "Reduje el costo de inferencia de IA en 93% (de $1 por 10 a $1 por 150 mensajes) optimizando contexto, prompts y gestión de tokens.",
-        en: "Cut AI inference cost by 93% (from $1 per 10 to $1 per 150 messages) by optimizing context, prompts and token usage.",
+        es: "Implementé un set de evals sobre conversaciones reales midiendo groundedness y consistencia entre corridas, atajando alucinaciones antes de que llegaran al usuario final.",
+        en: "Implemented an eval suite over real conversations measuring groundedness and run-to-run consistency, catching hallucinations before they reached end users.",
       },
       {
-        es: "Migré la infraestructura a Google Cloud (Cloud SQL) y mantengo el stack completo: frontend, backend, APIs e integraciones.",
-        en: "Migrated the infrastructure to Google Cloud (Cloud SQL) and maintain the full stack: frontend, backend, APIs and integrations.",
+        es: "Migré la base de datos a Cloud SQL en GCP y opero el stack completo: frontend, backend, APIs e infraestructura. Defino el roadmap técnico y las decisiones de producto.",
+        en: "Migrated the database to Cloud SQL on GCP and own the full stack: frontend, backend, APIs and infrastructure. I define the technical roadmap and product decisions.",
       },
     ],
   },
@@ -84,8 +84,8 @@ export const experience: ExperienceItem[] = [
     accent: "indigo",
     highlights: [
       {
-        es: "Construí sistemas conversacionales para el sector financiero con modelos GPT y técnicas de procesamiento de lenguaje natural (PLN).",
-        en: "Built conversational systems for the financial sector using GPT models and natural language processing (NLP).",
+        es: "Desarrollé un sistema conversacional para el sector financiero integrando LLMs y técnicas de procesamiento de lenguaje natural (PLN).",
+        en: "Developed a conversational system for the financial sector integrating LLMs and natural language processing (NLP) techniques.",
       },
       {
         es: "Implementé arquitecturas RAG con bases de datos vectoriales, incrementando 30% la precisión contextual de las respuestas.",

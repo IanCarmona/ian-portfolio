@@ -22,7 +22,7 @@ export const profile: Profile = {
     },
   ],
   stats: [
-    { value: 93, suffix: "%", labelKey: "costReduction" },
+    { value: 70, suffix: "%", labelKey: "costReduction" },
     { value: 30, prefix: "+", suffix: "%", labelKey: "ragPrecision" },
     { value: 4, prefix: "+", suffix: "h", labelKey: "hoursSaved" },
     { value: 24, suffix: "/7", labelKey: "uptime" },
@@ -50,7 +50,7 @@ export const profile: Profile = {
     "ian_carmona — AI & Data Engineer",
     "$ cat stack.txt",
     "python · sql · react · next.js · node",
-    "databricks · pyspark · gcp · rag · gpt",
+    "langgraph · claude · rag · databricks · gcp",
     "$ ./run --status",
     "✓ shipping AI to production",
   ],

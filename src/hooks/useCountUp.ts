@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useState } from "react";
 
 import { usePrefersReducedMotion } from "./usePrefersReducedMotion";
 
@@ -16,11 +16,9 @@ const easeOutCubic = (t: number) => 1 - Math.pow(1 - t, 3);
 export function useCountUp(target: number, { duration = 1600, enabled = true }: Options = {}) {
   const [value, setValue] = useState(0);
   const reduced = usePrefersReducedMotion();
-  const started = useRef(false);
 
   useEffect(() => {
-    if (!enabled || started.current) return;
-    started.current = true;
+    if (!enabled) return;
 
     if (reduced) {
       setValue(target);
@@ -35,6 +33,11 @@ export function useCountUp(target: number, { duration = 1600, enabled = true }: 
       if (progress < 1) raf = requestAnimationFrame(tick);
     };
     raf = requestAnimationFrame(tick);
+
+    // Deliberately no run-once guard: `reduced` resolves to its real value one
+    // tick after mount, which re-runs this effect. A guard would skip the body
+    // while the cleanup below had already cancelled the frame, freezing the
+    // display at 0. Restarting the tween is cheap and always lands on `target`.
     return () => cancelAnimationFrame(raf);
   }, [enabled, target, duration, reduced]);
 

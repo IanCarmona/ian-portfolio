@@ -7,7 +7,7 @@ import { ArrowUpRight } from "lucide-react";
 
 import { ButtonLink, Reveal, Tag } from "@/shared/components/ui";
 
-const STACK = ["Next.js", "FastAPI", "GPT", "GCP", "Stripe"];
+const STACK = ["LangGraph", "Claude", "Next.js", "FastAPI", "GCP", "Stripe"];
 
 /** Standalone "flagship product" section for Amyra — kept apart from the
  * school-project grid so the production work doesn't get mixed with demos. */
@@ -50,7 +50,7 @@ export function FeaturedAmyra() {
 
                 {/* KPIs */}
                 <div className="mt-6 grid max-w-md grid-cols-3 gap-3">
-                  <Kpi value="93%" label={t("kpi1")} />
+                  <Kpi value="70%" label={t("kpi1")} />
                   <Kpi value="24/7" label={t("kpi2")} />
                   <Kpi value="✓" label={t("kpi3")} />
                 </div>

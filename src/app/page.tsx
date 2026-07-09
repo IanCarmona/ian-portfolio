@@ -20,11 +20,13 @@ export default function Home() {
       <Navbar />
       <main>
         <Hero />
+        {/* Evidence first: the product with paying customers, then the five
+            playable demos. Narrative sections follow. */}
+        <FeaturedAmyra />
+        <PersonalProjects />
         <About />
         <Experience />
         <Projects />
-        <FeaturedAmyra />
-        <PersonalProjects />
         <Skills />
         <Certifications />
         <Hobbies />

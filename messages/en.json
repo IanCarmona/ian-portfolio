@@ -19,7 +19,7 @@
     "scroll": "Scroll"
   },
   "stats": {
-    "costReduction": "AI cost reduction",
+    "costReduction": "cost per message reduction",
     "ragPrecision": "precision with RAG",
     "hoursSaved": "automated daily",
     "uptime": "agent uptime"
@@ -52,7 +52,7 @@
     "title": "Amyra",
     "lede": "Conversational SaaS platform for fitness studios with a WhatsApp AI agent that books, charges memberships and serves customers 24/7. Live in production with paying customers.",
     "cta": "See Amyra live",
-    "kpi1": "AI cost reduction",
+    "kpi1": "cost per message reduction",
     "kpi2": "agent uptime",
     "kpi3": "full stack"
   },

@@ -5,10 +5,12 @@ import { useTranslations } from "next-intl";
 import { Download, Github, Linkedin, Mail, MapPin, Phone } from "lucide-react";
 
 import { SITE } from "@/constants/site";
+import { useLanguage } from "@/providers/LanguageProvider";
 import { ButtonLink, GradientText, Reveal } from "@/shared/components/ui";
 
 export function Contact() {
   const t = useTranslations("contact");
+  const { locale } = useLanguage();
 
   const links = [
     { icon: Mail, label: SITE.email, href: `mailto:${SITE.email}` },
@@ -42,7 +44,7 @@ export function Contact() {
                   <Mail size={18} />
                   {t("emailCta")}
                 </ButtonLink>
-                <ButtonLink href={SITE.cvPath} external variant="secondary" size="lg">
+                <ButtonLink href={SITE.cv[locale]} external variant="secondary" size="lg">
                   <Download size={18} />
                   {t("downloadCv")}
                 </ButtonLink>

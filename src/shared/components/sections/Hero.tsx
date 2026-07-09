@@ -155,7 +155,9 @@ export function Hero() {
           {profile.stats.map((s) => (
             <div key={s.labelKey} className="bg-surface/80 px-4 py-5 text-center">
               <div className="text-2xl font-semibold text-text sm:text-3xl">
-                <StatNumber value={s.value} prefix={s.prefix} suffix={s.suffix} />
+                {/* eager: the stats row sits at the fold on short viewports —
+                    waiting for the observer would render a literal "0%". */}
+                <StatNumber eager value={s.value} prefix={s.prefix} suffix={s.suffix} />
               </div>
               <div className="mt-1 text-[11px] leading-tight text-text-dim">
                 {tStats(s.labelKey)}
@@ -166,7 +168,7 @@ export function Hero() {
       </div>
 
       <a
-        href="#about"
+        href="#amyra"
         className="absolute bottom-6 left-1/2 -translate-x-1/2 text-text-faint transition-colors hover:text-text"
         aria-label={t("scroll")}
       >

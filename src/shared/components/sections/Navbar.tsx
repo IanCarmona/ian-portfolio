@@ -80,7 +80,7 @@ export function Navbar() {
             {locale.toUpperCase()}
           </button>
           <ButtonLink
-            href={SITE.cvPath}
+            href={SITE.cv[locale]}
             external
             size="md"
             className="hidden !px-4 !py-2 text-xs sm:inline-flex"
@@ -116,7 +116,7 @@ export function Navbar() {
             </a>
           ))}
           <a
-            href={SITE.cvPath}
+            href={SITE.cv[locale]}
             target="_blank"
             rel="noopener noreferrer"
             className="mt-2 flex items-center gap-2 rounded-lg bg-gradient-to-r from-indigo to-cyan px-4 py-2.5 text-sm font-medium text-white"

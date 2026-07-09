@@ -6,16 +6,17 @@ export const projects: Project[] = [
     company: "Amyra",
     accent: "indigo",
     summary: {
-      es: "Agente autónomo para studios de fitness que agenda citas, envía recordatorios, vende membresías y responde consultas del negocio por WhatsApp. Optimicé prompts, contexto y tokens para hacerlo rentable a escala.",
-      en: "Autonomous agent for fitness studios that books appointments, sends reminders, sells memberships and answers business queries over WhatsApp. I optimized prompts, context and tokens to make it profitable at scale.",
+      es: "Agente autónomo para estudios de fitness que agenda citas, envía recordatorios, vende membresías y responde consultas del negocio por WhatsApp. Migración de modelo, prompt caching y poda de contexto para hacerlo rentable a escala.",
+      en: "Autonomous agent for fitness studios that books appointments, sends reminders, sells memberships and answers business queries over WhatsApp. Model migration, prompt caching and context pruning made it profitable at scale.",
     },
-    stack: ["GPT", "Python", "RAG", "WhatsApp API", "GCP", "Cloud SQL"],
+    stack: ["LangGraph", "Claude", "Python", "RAG", "WhatsApp API", "GCP"],
     metric: {
-      value: 93,
+      value: 70,
       suffix: "%",
-      label: { es: "reducción de costo operativo", en: "operating cost reduction" },
+      label: { es: "reducción de costo por mensaje", en: "cost per message reduction" },
     },
-    sparkline: [92, 80, 70, 58, 44, 33, 22, 12, 7],
+    // Cost index per message, falling to 30 (a 70% reduction).
+    sparkline: [100, 92, 81, 70, 61, 52, 45, 37, 30],
   },
   {
     title: { es: "Automatización regulatoria COSAR", en: "COSAR regulatory automation" },
@@ -33,17 +34,16 @@ export const projects: Project[] = [
       label: { es: "diarias eliminadas de trabajo manual", en: "daily manual hours removed" },
     },
     sparkline: [10, 22, 30, 45, 55, 68, 78, 88, 100],
-    accent: "cyan",
   },
   {
     title: { es: "RAG financiero conversacional", en: "Financial conversational RAG" },
     company: "Romboworks",
     accent: "indigo",
     summary: {
-      es: "Sistema conversacional para el sector financiero con GPT y PLN. Implementé RAG con base de datos vectorial para mejorar la recuperación de contexto y la precisión de las respuestas del modelo.",
-      en: "Conversational system for the financial sector with GPT and NLP. I implemented RAG with a vector database to improve context retrieval and the model's answer precision.",
+      es: "Sistema conversacional para el sector financiero con LLMs y PLN. Implementé RAG con base de datos vectorial para mejorar la recuperación de contexto y la precisión de las respuestas del modelo.",
+      en: "Conversational system for the financial sector with LLMs and NLP. I implemented RAG with a vector database to improve context retrieval and the model's answer precision.",
     },
-    stack: ["GPT", "RAG", "Vector DB", "NLP", "React", "Node.js"],
+    stack: ["LLMs", "RAG", "Vector DB", "NLP", "React", "Node.js"],
     metric: {
       value: 30,
       prefix: "+",
@@ -51,7 +51,6 @@ export const projects: Project[] = [
       label: { es: "precisión en las respuestas", en: "answer precision" },
     },
     sparkline: [40, 45, 52, 58, 63, 68, 72, 76, 70],
-    accent: "indigo",
   },
   {
     title: { es: "Pipelines FinOps (Medallion)", en: "FinOps pipelines (Medallion)" },
@@ -68,6 +67,5 @@ export const projects: Project[] = [
       label: { es: "capas Medallion (bronze/silver/gold)", en: "Medallion layers (bronze/silver/gold)" },
     },
     sparkline: [20, 35, 30, 50, 60, 55, 75, 85, 95],
-    accent: "cyan",
   },
 ];

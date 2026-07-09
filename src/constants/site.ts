@@ -9,16 +9,20 @@ export const SITE = {
   phoneHref: "+525578520955",
   linkedin: "https://www.linkedin.com/in/engineer-ia-ian-carmona/",
   github: "https://github.com/IanCarmona",
-  cvPath: "/cv/CV_Ian_Carmona.pdf",
+  /** CV is served per locale — the download follows the active language toggle. */
+  cv: {
+    es: "/cv/CV_Ian_Carmona_ES.pdf",
+    en: "/cv/CV_Ian_Carmona_EN.pdf",
+  },
   url: "https://iancarmona.dev",
 } as const;
 
-/** Anchor sections used by the navbar. */
+/** Anchor sections used by the navbar. Order mirrors the page section order. */
 export const NAV_SECTIONS = [
+  "lab",
   "about",
   "experience",
   "projects",
-  "lab",
   "skills",
   "contact",
 ] as const;

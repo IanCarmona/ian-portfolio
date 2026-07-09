@@ -6,10 +6,12 @@ import { useTranslations } from "next-intl";
 import { ArrowUp, Download, Github, Linkedin, Mail, MapPin } from "lucide-react";
 
 import { SITE, NAV_SECTIONS } from "@/constants/site";
+import { useLanguage } from "@/providers/LanguageProvider";
 
 export function Footer() {
   const t = useTranslations("footer");
   const tNav = useTranslations("nav");
+  const { locale } = useLanguage();
   const year = new Date().getFullYear();
 
   return (
@@ -94,7 +96,7 @@ export function Footer() {
               </li>
               <li>
                 <a
-                  href={SITE.cvPath}
+                  href={SITE.cv[locale]}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 transition-colors hover:text-text"
