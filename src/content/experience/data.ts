@@ -3,29 +3,8 @@ import type { ExperienceItem } from "./types";
 const present = { es: "Presente", en: "Present" };
 const cdmx = { es: "Ciudad de México", en: "Mexico City" };
 
+/** Reverse chronological, matching the CV. */
 export const experience: ExperienceItem[] = [
-  {
-    company: "Profuturo",
-    role: { es: "Data Engineer · Data Warehouse", en: "Data Engineer · Data Warehouse" },
-    start: "Jul 2025",
-    end: present,
-    location: cdmx,
-    accent: "cyan",
-    highlights: [
-      {
-        es: "Diseño y estandarizo pipelines y modelos estrella bajo arquitectura Medallion en Databricks, integrando fuentes multi-cloud con foco en trazabilidad, gobernanza y calidad del dato.",
-        en: "Design and standardize pipelines and star schemas under a Medallion architecture in Databricks, integrating multi-cloud sources with a focus on traceability, governance and data quality.",
-      },
-      {
-        es: "Habilité dashboards ejecutivos en Power BI para una iniciativa FinOps, dando visibilidad del gasto tecnológico y consumo multi-cloud a nivel dirección.",
-        en: "Enabled executive Power BI dashboards for a FinOps initiative, giving leadership visibility into tech spend and multi-cloud consumption.",
-      },
-      {
-        es: "Automaticé la generación y validación de archivos regulatorios COSAR con Python y PySpark, eliminando +4 h diarias de trabajo manual y mitigando riesgo regulatorio.",
-        en: "Automated the generation and validation of COSAR regulatory files with Python and PySpark, removing 4+ daily manual hours and mitigating regulatory risk.",
-      },
-    ],
-  },
   {
     company: "Amyra",
     url: "https://amyra.com.mx",
@@ -54,24 +33,24 @@ export const experience: ExperienceItem[] = [
     ],
   },
   {
-    company: "MOSSAIC",
-    role: { es: "Full-Stack Engineer", en: "Full-Stack Engineer" },
-    start: "Nov 2025",
+    company: "Profuturo",
+    role: { es: "Data Engineer · Data Warehouse", en: "Data Engineer · Data Warehouse" },
+    start: "Jul 2025",
     end: present,
     location: cdmx,
     accent: "cyan",
     highlights: [
       {
-        es: "Construyo y despliego aplicaciones web, APIs y plataformas cloud para clientes de distintas industrias, de la definición técnica a producción.",
-        en: "Build and deploy web apps, APIs and cloud platforms for clients across industries, from technical definition to production.",
+        es: "Diseño y estandarizo pipelines y modelos estrella bajo arquitectura Medallion en Databricks, integrando fuentes multi-cloud con foco en trazabilidad, gobernanza y calidad del dato.",
+        en: "Design and standardize pipelines and star schemas under a Medallion architecture in Databricks, integrating multi-cloud sources with a focus on traceability, governance and data quality.",
       },
       {
-        es: "Defino arquitecturas y selecciono el stack según los objetivos de cada proyecto, priorizando escalabilidad y mantenibilidad.",
-        en: "Define architectures and choose the stack based on each project's goals, prioritizing scalability and maintainability.",
+        es: "Habilité dashboards ejecutivos en Power BI para una iniciativa FinOps, dando visibilidad del gasto tecnológico y consumo multi-cloud a nivel dirección.",
+        en: "Enabled executive Power BI dashboards for a FinOps initiative, giving leadership visibility into tech spend and multi-cloud consumption.",
       },
       {
-        es: "Aporto en la incubadora interna de productos, del concepto al desarrollo de nuevas soluciones digitales.",
-        en: "Contribute to the internal product incubator, from concept to building new digital solutions.",
+        es: "Automaticé la generación y validación de archivos regulatorios COSAR con Python y PySpark, eliminando +4 h diarias de trabajo manual y mitigando riesgo regulatorio.",
+        en: "Automated the generation and validation of COSAR regulatory files with Python and PySpark, removing 4+ daily manual hours and mitigating regulatory risk.",
       },
     ],
   },
